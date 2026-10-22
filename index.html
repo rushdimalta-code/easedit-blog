@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Interview Guides — easedit.co</title>
+  <meta name="description" content="Practical guides to behavioural, competency and admissions interviews. Practise answers with AI at easedit.co.">
+  <link rel="canonical" href="https://easedit-blog.netlify.app/">
+  <meta property="og:title" content="Free Interview Guides — easedit.co">
+  <meta property="og:description" content="Practical guides to behavioural, competency and admissions interviews. Practise answers with AI at easedit.co.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://easedit-blog.netlify.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <div class="hero">
+      <h1>Free Interview Guides</h1>
+      <p>Practical, no-fluff guides to the questions that decide whether you get the job —
+         or the place.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=index"
+         class="hero-cta">Practice with AI at easedit.co →</a>
+    </div>
+    <h2 style="font-size:1.1rem;font-weight:600;margin:0 0 16px;color:var(--dark)">
+      Career Interview Guides</h2>
+    <div class="post-grid">
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/003-greatest-weakness/">How to Answer 'What's Your Greatest Weakness?' — And Why WISP Beats the 3-Part Formula</a></h2>
+        <a href="/blog/003-greatest-weakness/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/004-greatest-strength/">How to Answer 'What's Your Greatest Strength?' Without Sounding Like a CV</a></h2>
+        <a href="/blog/004-greatest-strength/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/005-tell-me-about-a-time-you-failed/">Tell Me About a Time You Failed — Why the Dodge Always Backfires</a></h2>
+        <a href="/blog/005-tell-me-about-a-time-you-failed/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/006-where-do-you-see-yourself-in-5-years/">Where Do You See Yourself in 5 Years? The Two Wrong Answers and What to Say Instead</a></h2>
+        <a href="/blog/006-where-do-you-see-yourself-in-5-years/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/star-method-behavioural-interview-answers/">The STAR Method — How to Structure Every Behavioural Interview Answer</a></h2>
+        <a href="/blog/star-method-behavioural-interview-answers/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/020-car-vs-star/">CAR vs STAR — Which Framework to Use and When</a></h2>
+        <a href="/blog/020-car-vs-star/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/how-to-answer-tell-me-about-yourself/">How to Answer "Tell Me About Yourself" Without Sounding Rehearsed</a></h2>
+        <a href="/blog/how-to-answer-tell-me-about-yourself/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Career</div>
+        <h2><a href="/blog/002-why-do-you-want-this-role/">Why Do You Want This Role? What Interviewers Are Actually Listening For</a></h2>
+        <a href="/blog/002-why-do-you-want-this-role/" class="read-link">Read guide →</a>
+      </div></div>
+    
+      <h2 style="font-size:1.1rem;font-weight:600;margin:40px 0 16px;color:var(--dark)">
+        Admissions Interview Guides</h2>
+      <div class="post-grid">
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/046-yale-alumni-interview/">The Yale Alumni Interview — What 'Not a Formality' Actually Means</a></h2>
+        <a href="/blog/046-yale-alumni-interview/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/047-princeton-alumni-interview/">The Princeton Alumni Interview — Why Being Wrong Is Part of the Point</a></h2>
+        <a href="/blog/047-princeton-alumni-interview/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/049-oxford-subject-interview/">The Oxford Subject Interview — What Tutors Are Actually Testing</a></h2>
+        <a href="/blog/049-oxford-subject-interview/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/050-cambridge-interview/">The Cambridge Admissions Interview — How to Think Out Loud Without Freezing</a></h2>
+        <a href="/blog/050-cambridge-interview/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/051-hbs-interview/">The HBS Interview — 30 Questions in 30 Minutes, and What That Means for You</a></h2>
+        <a href="/blog/051-hbs-interview/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/052-insead-two-interviews/">INSEAD's Two Alumni Interviews — What to Expect and How to Prepare</a></h2>
+        <a href="/blog/052-insead-two-interviews/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/how-to-answer-why-this-university/">How to Answer "Why This University?" — What Admissions Interviewers Actually Want</a></h2>
+        <a href="/blog/how-to-answer-why-this-university/" class="read-link">Read guide →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="series-tag">Admissions</div>
+        <h2><a href="/blog/harvard-undergraduate-alumni-interview-2025/">What the Harvard Undergraduate Alumni Interview Is Really Like in 2025</a></h2>
+        <a href="/blog/harvard-undergraduate-alumni-interview-2025/" class="read-link">Read guide →</a>
+      </div></div>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

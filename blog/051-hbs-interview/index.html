@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The HBS Interview — 30 Questions in 30 Minutes, and What That Means for You — easedit Interview Guides</title>
+  <meta name="description" content="Most MBA interviews involve 10-15 questions over 30 minutes. Harvard Business School asks 30-40.">
+  <link rel="canonical" href="https://easedit.co/blog/051-hbs-interview">
+  <meta property="og:title" content="The HBS Interview — 30 Questions in 30 Minutes, and What That Means for You — easedit Interview Guides">
+  <meta property="og:description" content="Most MBA interviews involve 10-15 questions over 30 minutes. Harvard Business School asks 30-40.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/051-hbs-interview">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Admissions Interview Guide</span> ·
+        <a href="https://easedit.co/blog/051-hbs-interview">Originally published at easedit.co</a>
+      </div>
+      <h1>The HBS Interview — 30 Questions in 30 Minutes, and What That Means for You</h1>
+      <h1>The HBS Interview — 30 Questions in 30 Minutes, and What That Means for You</h1>
+
+<p>Most MBA interviews involve 10-15 questions over 30 minutes. Harvard Business School asks 30-40.</p>
+
+<p>That's not a typo. HBS moves fast — and understanding why changes how you prepare.</p>
+
+<h2>What Makes HBS Different</h2>
+
+<p>The HBS interview is <strong>non-blind and comprehensive</strong>. The admissions committee member sitting across from you has already read your entire application — your essays, résumé, and recommendations — before the conversation begins.</p>
+
+<p>At most MBA programmes, alumni conduct interviews without access to your application. At HBS, an admissions committee member does it, and they've done their reading.</p>
+
+<p>This changes the dynamic significantly. They're not trying to understand your background for the first time. They already have a picture of you. The interview is about testing the coherence of that picture under real-time pressure — and pushing on the parts that feel unclear.</p>
+
+<h2>The Speed: 30-40 Questions in 30 Minutes</h2>
+
+<p>The pace is deliberate. With that many questions in 30 minutes, you can't over-explain any single answer. HBS is forcing you to be concise, prioritise what matters, and communicate clearly under time pressure.</p>
+
+<p>The interviewer will move on even if you're still mid-thought. If they say "let's move on," they mean it.</p>
+
+<p>Preparation for this isn't just knowing your answers — it's knowing them briefly. Practice delivering your key career moments in 30-45 seconds, not 2-3 minutes.</p>
+
+<h2>What HBS Is Actually Evaluating</h2>
+
+<p>A former HBS admissions committee member describes it this way: "The content of your answer matters less than the coherence of your decision-making logic across different parts of your life."</p>
+
+<p>They're not scoring individual answers. They're looking for a consistent thread connecting your decisions — why you chose your college, your field, your company, your pivot points. Every major choice in your life should have a reason, and those reasons should be consistent.</p>
+
+<p>Weak candidates have inconsistencies between what they wrote in their essays and what they say in the interview. Strong candidates tell the same story — in both, the motivation is the same, even if the language changes.</p>
+
+<h2>The "Why" Behind Everything</h2>
+
+<p>HBS interviewers ask "why?" repeatedly. Not just "why HBS?" but:</p>
+
+<ul>
+<li>Why did you go to that university?</li>
+<li>Why did you choose your first employer?</li>
+<li>Why did you leave?</li>
+<li>Why this next move?</li>
+<li>Why now?</li>
+</ul>
+
+<p>Prepare for follow-up. The first answer is rarely the final answer at HBS. They drill.</p>
+
+<h2>The Post-Interview Reflection</h2>
+
+<p>HBS is the only MBA programme with a formal post-interview reflection. Within 24 hours of your interview, you submit a written reflection via the HBS admissions system.</p>
+
+<p>It is not a prepared statement. It should include:</p>
+
+<ul>
+<li>A brief thank-you to your interviewer</li>
+<li>An honest reflection on how the interview went</li>
+<li>Specific points from the conversation you found meaningful</li>
+<li>What you took away and what it clarified for you</li>
+</ul>
+
+<p>The key word is "authentic." HBS knows what prepared statements look like. The reflection is meant to show self-awareness, not polish.</p>
+
+<p>Keep it under one page.</p>
+
+<h2>"Why HBS?" — The Question That Separates Candidates</h2>
+
+<p>Generic answers fail here more visibly than almost anywhere. "The case method," "the network," and "the calibre of classmates" are insufficient — every candidate says some version of this.</p>
+
+<p>Strong "Why HBS?" answers reference specific professors, courses, clubs, or initiatives. They explain why HBS in particular is the right environment for where the candidate is going — not just that it's a great school.</p>
+
+<p>If another school's name could be substituted into your answer without changing it, the answer isn't finished.</p>
+
+<h2>Selection Reality</h2>
+
+<p>Around 20% of HBS applicants are invited to interview. Of those interviewed, roughly 60% receive offers.</p>
+
+<p>If you've reached the interview stage, you're already a credible candidate. The interview is the final test of fit — and coherence is what passes it.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=051-hbs-interview"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

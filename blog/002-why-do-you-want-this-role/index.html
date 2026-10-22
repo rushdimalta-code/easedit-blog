@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Do You Want This Role? What Interviewers Are Actually Listening For — easedit Interview Guides</title>
+  <meta name="description" content="You've applied for the job. You've been invited to interview. And then someone asks why you want it — and you suddenly realise you haven't thought that carefull">
+  <link rel="canonical" href="https://easedit.co/blog/002-why-do-you-want-this-role">
+  <meta property="og:title" content="Why Do You Want This Role? What Interviewers Are Actually Listening For — easedit Interview Guides">
+  <meta property="og:description" content="You've applied for the job. You've been invited to interview. And then someone asks why you want it — and you suddenly realise you haven't thought that carefull">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/002-why-do-you-want-this-role">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/002-why-do-you-want-this-role">Originally published at easedit.co</a>
+      </div>
+      <h1>Why Do You Want This Role? What Interviewers Are Actually Listening For</h1>
+      <h1>Why Do You Want This Role? What Interviewers Are Actually Listening For</h1>
+
+<p>You've applied for the job. You've been invited to interview. And then someone asks why you want it — and you suddenly realise you haven't thought that carefully about it.</p>
+
+<p>The question sounds like small talk. It isn't.</p>
+
+<h2>What's Really Being Asked</h2>
+
+<p>When an interviewer asks why you want this role, they're not looking for a compliment about the company. They're asking whether you actually want to do the work.</p>
+
+<p>Hiring and onboarding a new employee is expensive and slow. Managers want someone who will stay, contribute, and grow — not someone who took this role because it was available. The question is a commitment test.</p>
+
+<p>Madeline Mann, a former head of talent acquisition, puts it bluntly: when two candidates are equally qualified, the offer goes to the one who wants the job more — and it shows.</p>
+
+<h2>The Three Areas Worth Covering</h2>
+
+<p>Strong answers touch some combination of these, in this order of priority:</p>
+
+<p><strong>1. The role itself.</strong> What specifically about the duties, projects, or problems in this role appeals to you? This is the most important element and where most candidates under-deliver. Be specific about the work, not the employer.</p>
+
+<p><strong>2. The team.</strong> Only include this if you've actually spoken with someone on the team and something genuine stood out. If you're guessing, leave it out.</p>
+
+<p><strong>3. The company.</strong> A specific detail you researched — a product, an initiative, a value the company holds publicly. Not "you're an innovative company" — that says nothing.</p>
+
+<p>You don't need all three. One strong, specific reason for the role is better than three vague ones about the company.</p>
+
+<h2>A Framework for Building Your Answer</h2>
+
+<p>Before the interview, work through these prompts:</p>
+
+<ul>
+<li>What is it about these <em>specific duties</em> that interests you? (Not the job title — the actual work)</li>
+<li>What in your background makes this the right next step for your career?</li>
+<li>What did you find when you researched the company that resonated?</li>
+</ul>
+
+<p>Then lead with the role, add the company hook if it's genuinely specific, and close with why this is the right career move for you right now.</p>
+
+<h2>What to Avoid</h2>
+
+<p><strong>Location and salary.</strong> Never mention either as a reason you want the role. Even if they're part of the appeal — leave them out.</p>
+
+<p><strong>Remote work as a selling point.</strong> "Millions of jobs are remote" is a direct quote from a talent recruiter explaining why this answer falls flat.</p>
+
+<p><strong>Generic praise.</strong> "You're a leading company in your sector" or "you have a great culture" — these could apply to dozens of employers. If a different company's name could slot in without changing anything, the answer isn't specific enough.</p>
+
+<p><strong>Only talking about the company.</strong> If you speak for two minutes about the brand but never explain why you want to do this particular work, the interviewer hears ambivalence about the role itself.</p>
+
+<h2>A Strong Answer Sounds Like This</h2>
+
+<p>"The reason I'm drawn to this role is I see an opportunity to use my background in logistics optimisation at exactly the moment this industry is shifting. Specifically, I'm interested in building out the supplier integration function — my experience is in creating processes where none exist, and from what I understand about the current setup here, that's where I could make an immediate contribution."</p>
+
+<p>Note what it does: leads with the work, not the company. Ties experience to a specific need. Shows research without sounding like a press release.</p>
+
+<h2>The Prep That Makes the Difference</h2>
+
+<p>Read the job description carefully — not the overview paragraph at the top, but the actual responsibilities. Find two or three that genuinely interest you. Know why.</p>
+
+<p>That's the answer.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=002-why-do-you-want-this-role"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAR vs STAR — Which Framework to Use and When — easedit Interview Guides</title>
+  <meta name="description" content="You've prepared your stories. You know the frameworks. Then someone asks you a behavioural question and you can't remember which one you're supposed to use — so">
+  <link rel="canonical" href="https://easedit.co/blog/020-car-vs-star">
+  <meta property="og:title" content="CAR vs STAR — Which Framework to Use and When — easedit Interview Guides">
+  <meta property="og:description" content="You've prepared your stories. You know the frameworks. Then someone asks you a behavioural question and you can't remember which one you're supposed to use — so">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/020-car-vs-star">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/020-car-vs-star">Originally published at easedit.co</a>
+      </div>
+      <h1>CAR vs STAR — Which Framework to Use and When</h1>
+      <h1>CAR vs STAR — Which Framework to Use and When</h1>
+
+<p>You've prepared your stories. You know the frameworks. Then someone asks you a behavioural question and you can't remember which one you're supposed to use — so you stall, choose one arbitrarily, and the answer comes out shapeless.</p>
+
+<p>The choice between CAR and STAR isn't arbitrary. There's a clear principle for which to use.</p>
+
+<h2>What the Frameworks Are</h2>
+
+<p><strong>STAR — Situation, Task, Action, Result</strong></p>
+
+<p>The standard behavioural framework. You set the scene (Situation), describe what you needed to do (Task), explain what you actually did (Action), and close with the outcome (Result).</p>
+
+<p>Four components, each with a distinct job. The Situation and Task together create context. Action is where you demonstrate competency. Result is what proves the competency produced something.</p>
+
+<p><strong>CAR — Challenge, Action, Result</strong></p>
+
+<p>A compressed version that merges Situation and Task into a single "Challenge." Setup happens in one sentence. You move faster to Action and Result — the parts that actually matter.</p>
+
+<p>Three components. Less scaffolding. More airtime on the substance.</p>
+
+<h2>The Decision Rule</h2>
+
+<p>Use <strong>STAR</strong> when the context needs explanation. Complex situations, unusual roles, multi-party projects, or anything where the interviewer won't immediately understand what you were dealing with — these need the extra space that Situation and Task provide separately.</p>
+
+<p>Use <strong>CAR</strong> when the setup is self-explanatory. If you can establish the context in a single sentence and the interviewer will immediately understand it, the second component of STAR (Task) is adding length without adding information.</p>
+
+<p>A simple test: can you set up this story in one sentence? If yes, use CAR. If the situation requires more unpacking, use STAR.</p>
+
+<h2>The Same Story in Both Formats</h2>
+
+<p>Here's an example — a product launch delayed by a vendor — shown in both frameworks:</p>
+
+<p><strong>CAR version:</strong></p>
+<p>"A critical vendor missed a delivery that threatened our launch timeline." <em>(Challenge — one sentence)</em> "I contacted three alternative suppliers in parallel, negotiated emergency terms with the fastest, and revised the project schedule with a 4-day buffer." <em>(Action)</em> "We launched on time. The alternative supplier is now our primary vendor." <em>(Result)</em></p>
+
+<p><strong>STAR version:</strong></p>
+<p>"We were three weeks out from launching a new product line." <em>(Situation)</em> "A core component vendor notified us they couldn't deliver on schedule — which would have pushed the launch back by at least two weeks." <em>(Task)</em> "I contacted three alternative suppliers in parallel..." <em>(Action — same as above)</em> "We launched on time..." <em>(Result — same as above)</em></p>
+
+<p>The Action and Result are identical. The difference is how much setup the story needs. In this case, CAR is the better choice — the challenge is clear in one sentence, and STAR adds a component that isn't doing much work.</p>
+
+<h2>The Most Common Mistake</h2>
+
+<p>Using STAR for everything and letting the Situation expand indefinitely. Candidates sometimes spend two minutes establishing context that could have been covered in fifteen seconds. When the setup takes longer than the action, the answer has already lost the interviewer.</p>
+
+<p>The purpose of both frameworks is to spend most of the answer on what <em>you</em> did and what <em>resulted from it</em>. Everything else is scaffolding.</p>
+
+<h2>Preparing Your Story Bank</h2>
+
+<p>When you prepare behavioural stories before an interview, test each one:</p>
+
+<p>1. Can the setup be stated in one sentence? → CAR candidate</p>
+<p>2. Does the situation require separate explanation of context and what you were responsible for? → STAR candidate</p>
+<p>3. Where in the answer is most of the time going? → If it's Situation, compress it.</p>
+
+<p>Most candidates have 6-8 strong stories that cover the common behavioural question categories: leadership, failure, conflict, initiative, pressure, collaboration. The same story often works for multiple questions — what changes is which element you emphasise.</p>
+
+<p>Both frameworks work. The discipline is using them correctly, not habitually.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=020-car-vs-star"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>
