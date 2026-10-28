@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Review a Job Offer Letter Before You Sign — easedit Interview Guides</title>
+  <meta name="description" content="The offer has arrived. You want to say yes immediately.">
+  <link rel="canonical" href="https://easedit.co/blog/reviewing-job-offer-letter">
+  <meta property="og:title" content="How to Review a Job Offer Letter Before You Sign — easedit Interview Guides">
+  <meta property="og:description" content="The offer has arrived. You want to say yes immediately.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/reviewing-job-offer-letter">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/reviewing-job-offer-letter">Originally published at easedit.co</a>
+      </div>
+      <h1>How to Review a Job Offer Letter Before You Sign</h1>
+      <h1>How to Review a Job Offer Letter Before You Sign</h1>
+
+<p>The offer has arrived. You want to say yes immediately.</p>
+
+<p>Don't.</p>
+
+<p>Not because there's something wrong with the offer — but because you should read what you're agreeing to before you agree to it. Most people spend 30 seconds on an offer letter and sign it. The ones who spend 30 minutes occasionally find things worth negotiating, and almost always feel more confident about what they've accepted.</p>
+
+<p><strong>The rule is simple: never sign an offer letter the same day you receive it unless you've read every line.</strong></p>
+
+<hr>
+
+<h2>The checklist</h2>
+
+<h3>Compensation</h3>
+
+<ul>
+<li>Is the base salary exactly what was discussed verbally?</li>
+<li>Is the bonus structure clear — the target amount, the conditions, the payment timing?</li>
+<li>Are there equity/options listed? If so: vesting schedule, cliff, exercise window on departure?</li>
+<li>Are there any deductions, clawbacks, or conditions on the signing bonus if one was offered?</li>
+</ul>
+
+<p>One in five offer letters contains a discrepancy between what was discussed verbally and what appears in writing. Not always intentional — often just an administrative error. Check before you sign, not after you start.</p>
+
+<h3>Title and responsibilities</h3>
+
+<ul>
+<li>Does the title match what was discussed?</li>
+<li>Is the reporting line correct?</li>
+<li>Is there any language that significantly expands the scope of your role beyond what you discussed?</li>
+</ul>
+
+<h3>Start date and working arrangements</h3>
+
+<ul>
+<li>Is the start date agreed? Is there flexibility?</li>
+<li>Is the working arrangement specified — remote, hybrid, in-office? What is the expectation?</li>
+<li>Are there any probationary conditions?</li>
+</ul>
+
+<h3>Contractual terms to look for</h3>
+
+<p><strong>Non-compete clauses.</strong> These vary in legal enforceability by jurisdiction, but you should know what you're agreeing to. How long does the restriction last? Which companies or industries are off-limits?</p>
+
+<p><strong>IP assignment.</strong> Most standard contracts assign intellectual property created during employment to the employer. Some extend this to work created outside employment hours that relates to the company's business. Read what's included and what carve-outs exist.</p>
+
+<p><strong>Notice periods.</strong> Both your minimum notice to leave and the company's minimum notice to terminate. Is this symmetrical?</p>
+
+<p><strong>Restrictive covenants on departure.</strong> Non-solicitation of clients, non-solicitation of colleagues — how long do these last?</p>
+
+<hr>
+
+<h2>What's negotiable</h2>
+
+<p>More than most candidates assume.</p>
+
+<ul>
+<li>Base salary (if you have market data to support the ask)</li>
+<li>Start date</li>
+<li>Remote/hybrid working arrangement</li>
+<li>Signing bonus</li>
+<li>Equity terms (occasionally)</li>
+<li>Notice period (sometimes)</li>
+</ul>
+
+<p>What's rarely negotiable in a standard offer: the IP assignment clause, the probationary period structure, the non-compete geography (though duration sometimes is).</p>
+
+<p>See the <a href="https://easedit.co/blog/031-salary-negotiation-script" rel="noopener">salary negotiation script</a> for exactly how to approach a counter-offer once you've identified what you want to negotiate.</p>
+
+<hr>
+
+<h2>Research before you respond</h2>
+
+<p>Before you respond to an offer — even to accept — do two things.</p>
+
+<p>First, check the market rate for the role in this location and industry. Not to necessarily push back, but to know whether what you're being offered is competitive. Glassdoor, LinkedIn salary, and Levels.fyi (for tech roles) all have current data. See the <a href="https://easedit.co/blog/030-salary-benchmarking" rel="noopener">salary benchmarking guide</a> for the method.</p>
+
+<p>Second, understand the company's financial situation. If it's a startup: what funding round are they on, what's the runway, how are equity terms structured? A generous-looking equity package at a company 6 months from a down round is different from one at a company that just closed a Series B.</p>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How long can I take to respond to a job offer?</h3>
+
+<p>24–72 hours is standard for most roles. For senior positions, a week is not unusual. Asking for a reasonable amount of time to review is expected — most employers have made multiple offers and know the process takes a few days.</p>
+
+<h3>Can I negotiate after receiving a written offer?</h3>
+
+<p>Yes. A written offer is an invitation to confirm acceptance, not a signed contract. You can negotiate salary, start date, benefits, and some contractual terms. The written offer rarely means negotiations are over.</p>
+
+<h3>What's the difference between an offer letter and an employment contract?</h3>
+
+<p>An offer letter is typically a summary of key terms — compensation, title, start date — while the employment contract contains the full legal terms. In some companies, the two are the same document. In others, the contract follows after acceptance. Always ask which you're receiving.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=reviewing-job-offer-letter"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

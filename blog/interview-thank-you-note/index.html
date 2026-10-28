@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You Note After an Interview: What to Write and When — easedit Interview Guides</title>
+  <meta name="description" content="A thank-you note and a follow-up email are not the same thing, and conflating them leads to the wrong approach in both cases.">
+  <link rel="canonical" href="https://easedit.co/blog/interview-thank-you-note">
+  <meta property="og:title" content="Thank You Note After an Interview: What to Write and When — easedit Interview Guides">
+  <meta property="og:description" content="A thank-you note and a follow-up email are not the same thing, and conflating them leads to the wrong approach in both cases.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/interview-thank-you-note">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/interview-thank-you-note">Originally published at easedit.co</a>
+      </div>
+      <h1>Thank You Note After an Interview: What to Write and When</h1>
+      <h1>Thank You Note After an Interview: What to Write and When</h1>
+
+<p>A thank-you note and a follow-up email are not the same thing, and conflating them leads to the wrong approach in both cases.</p>
+
+<p>A <a href="https://easedit.co/blog/024-interview-follow-up-email" rel="noopener">follow-up email</a> is a professional communication that reinforces your candidacy. A thank-you note is an expression of genuine appreciation — shorter, warmer, less strategic. Both have a place. But sending a thank-you note when a follow-up email is expected (or the reverse) misreads the context.</p>
+
+<p><strong>The distinction is this: a follow-up email adds something to the conversation. A thank-you note closes it gracefully.</strong></p>
+
+<hr>
+
+<h2>When a thank-you note is appropriate</h2>
+
+<p>A handwritten note (or a genuinely warm, brief email) makes sense when:</p>
+
+<ul>
+<li>The interviewer spent significant time with you — a two-hour process, multiple tours, an in-depth conversation about your background</li>
+<li>You're applying to a senior role where formality signals respect</li>
+<li>The interview was for an academic position, a board role, or a position where relationships matter more than speed</li>
+<li>The interviewer went out of their way — arranged a visit, connected you with a colleague, shared something personal about the company's challenges</li>
+</ul>
+
+<p>In most other cases, a well-written follow-up email is the more appropriate and more effective format. A thank-you note sent where a follow-up email is expected reads as old-fashioned rather than gracious.</p>
+
+<hr>
+
+<h2>What to write</h2>
+
+<p>The structure of a thank-you note is simpler than a follow-up email.</p>
+
+<p><strong>Three sentences is enough.</strong></p>
+
+<p>1. Thank them for their time and something specific about the conversation.</p>
+<p>2. One sentence that reinforces your genuine interest — based on something you learned, not something generic.</p>
+<p>3. A simple close.</p>
+
+<p>Example:</p>
+
+<p>"Thank you for taking the time to speak with me on Thursday — particularly for the context you shared about where the team is heading over the next year. That made the role clearer and, honestly, more interesting. I hope to have the chance to work with you."</p>
+
+<p>That's it. Don't add more. The impulse to elaborate usually weakens the note.</p>
+
+<hr>
+
+<h2>Handwritten vs email</h2>
+
+<p>A handwritten note signals effort. The effort is the point — it takes more time than sending an email, and the recipient registers that.</p>
+
+<p>For senior roles or academic positions, a handwritten note mailed within 48 hours is genuinely unusual and therefore noticed. For most corporate roles, this will arrive after a decision has been made — which makes an email the more practical choice.</p>
+
+<p>If you're going to send a handwritten note, write it the same day. Don't wait.</p>
+
+<hr>
+
+<h2>Background research improves what you write</h2>
+
+<p>A thank-you note that references something specific — a project they mentioned, a challenge they described, a connection between your background and their current work — reads as genuine rather than formulaic.</p>
+
+<p>That specificity only comes from preparation. Candidates who researched the interviewer's background before the conversation (what they've worked on, what they care about) have material to draw on in a thank-you note. See the <a href="https://easedit.co/blog/021-interview-preparation-checklist" rel="noopener">interview preparation checklist</a> for the 20-minute background research routine that makes this possible.</p>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Should I send a thank-you note or a follow-up email?</h3>
+
+<p>In most professional contexts, a follow-up email is appropriate. A handwritten thank-you note is more suited to senior roles, academic interviews, or situations where the interviewer put exceptional effort into the process. For most job interviews in 2026, a well-written email achieves the same result faster.</p>
+
+<h3>What if I interviewed with multiple people?</h3>
+
+<p>Send one email to the primary contact (usually the recruiter or hiring manager) and mention the others by name: "Please pass on my thanks to [Name] and [Name] as well." Separate notes to each person are only necessary if you had a substantive conversation with each one individually.</p>
+
+<h3>Is a thank-you note expected in every industry?</h3>
+
+<p>Not universally. In fast-moving tech environments, a brief follow-up email within 24 hours is standard. In consulting, banking, law, and academia, the thank-you note convention is stronger. When in doubt, send something.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=interview-thank-you-note"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

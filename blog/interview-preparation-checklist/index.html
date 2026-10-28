@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Night-Before Interview Checklist — What Actually Matters — easedit Interview Guides</title>
+  <meta name="description" content="It's 9pm. Your interview is at 10am tomorrow. You're convinced you need to do more.">
+  <link rel="canonical" href="https://easedit.co/blog/interview-preparation-checklist">
+  <meta property="og:title" content="The Night-Before Interview Checklist — What Actually Matters — easedit Interview Guides">
+  <meta property="og:description" content="It's 9pm. Your interview is at 10am tomorrow. You're convinced you need to do more.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/interview-preparation-checklist">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/interview-preparation-checklist">Originally published at easedit.co</a>
+      </div>
+      <h1>The Night-Before Interview Checklist — What Actually Matters</h1>
+      <h1>The Night-Before Interview Checklist — What Actually Matters</h1>
+
+<p>It's 9pm. Your interview is at 10am tomorrow. You're convinced you need to do more.</p>
+
+<p>You probably don't. But you probably are doing the wrong things.</p>
+
+<p>Most candidates spend the night before an interview reading the company's Wikipedia entry for the third time, writing out new answers to questions they might get asked, or watching YouTube videos about body language. None of that will help you tomorrow. Some of it will hurt.</p>
+
+<p><strong>The single most useful thing you can do the night before is know exactly what you're going to say about your own experience</strong> — because that's what almost every question comes back to.</p>
+
+<hr>
+
+<h2>The actual checklist</h2>
+
+<p>This takes 90 minutes. Not more.</p>
+
+<p><strong>1. Reread your CV (10 min)</strong></p>
+<p>Every bullet point. Every date. Every job title. Interviewers ask about things on your CV that you've half-forgotten, and stumbling over your own history is one of the fastest ways to lose confidence in the room.</p>
+
+<p><strong>2. Reread the job description (10 min)</strong></p>
+<p>Underline the three requirements that appear most prominently. These will drive 80% of the questions. Prepare one concrete example for each.</p>
+
+<p><strong>3. Research the interview format (10 min)</strong></p>
+<p>Do you know whether it's behavioural, technical, competency-based, or a presentation? If not, find out tonight — not tomorrow morning. A LinkedIn message to someone who works there, a quick check of Glassdoor for that company's interview format, or an email to the recruiter all work. Walking in without knowing the format is a preventable mistake.</p>
+
+<p><strong>4. Prepare your core story (20 min)</strong></p>
+<p>Write out your answer to "tell me about yourself" — not to memorise word for word, but to get the structure right: where you've been, what you do well, why this role. Say it aloud once. If it takes longer than 90 seconds, cut it.</p>
+
+<p><strong>5. Prepare your background research summary (20 min)</strong></p>
+<p>Look up: what the company does, who their main competitors are, what they've announced in the last 6 months (press releases, LinkedIn posts, news), and — if you can find it — what the team you're joining is working on. You don't need to memorise all of this. You need one specific thing you can mention naturally: "I noticed you launched [X] last quarter — I was curious about how that's going." That one line signals more preparation than three pages of notes no one will see.</p>
+
+<p><strong>6. Prepare two questions to ask them (10 min)</strong></p>
+<p>Not "what's the culture like?" — they've heard that 40 times this week. Ask about something specific: a recent project, a challenge the team is working through, what success looks like in the first 90 days. Questions that show you've done research land better than questions that show you've read an article about asking good questions.</p>
+
+<p><strong>7. Sort the logistics (10 min)</strong></p>
+<p>Where exactly is the interview? How long does it take to get there? Do you need to print anything? Is it video — have you tested the link? Small logistics failures cause disproportionate damage to confidence.</p>
+
+<hr>
+
+<h2>What to stop doing the night before</h2>
+
+<p>Stop writing new answers. If you didn't prepare a particular story before today, trying to build one tonight will produce a scripted, over-rehearsed answer tomorrow.</p>
+
+<p>Stop reading general interview advice. You know what STAR is. You know to listen carefully. More advice tonight doesn't help — more practice does.</p>
+
+<p>Stop Googling everything about the company. One specific recent fact is worth more than a shallow understanding of everything.</p>
+
+<hr>
+
+<h2>Background research: how far to go</h2>
+
+<p>The right level of research is specific, not comprehensive. Interviewers can tell when a candidate has read the About page versus when they've read the job description carefully and connected it to their own experience.</p>
+
+<p>easedit.co's AI interviewer generates questions directly from your CV and the job description — which means it surfaces the connections an interviewer will make before you're sitting across from them. Running one session before an interview shows you where your stories are weak before they're tested in the room.</p>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How long should I spend preparing the night before an interview?</h3>
+
+<p>90 minutes is enough. Any longer and you risk over-preparing or memorising scripts that sound rehearsed. Use the time for targeted review, not new research.</p>
+
+<h3>Should I do a mock interview the night before?</h3>
+
+<p>Yes — one practice session on your key story (tell me about yourself, or your most relevant project) is useful. Full mock interviews the night before can make you feel underprepared if they go badly. Use easedit.co's free session at easedit.co/try.</p>
+
+<h3>What should I do the morning of the interview?</h3>
+
+<p>Reread your CV and the job description once. Nothing new. Your prep is done — the morning is for logistics, not research.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=interview-preparation-checklist"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

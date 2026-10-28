@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Benchmark Your Salary Before Negotiating — easedit Interview Guides</title>
+  <meta name="description" content="Most salary negotiations fail before they start — not because the candidate asked for too much, but because they had no idea what to ask for.">
+  <link rel="canonical" href="https://easedit.co/blog/salary-benchmarking">
+  <meta property="og:title" content="How to Benchmark Your Salary Before Negotiating — easedit Interview Guides">
+  <meta property="og:description" content="Most salary negotiations fail before they start — not because the candidate asked for too much, but because they had no idea what to ask for.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/salary-benchmarking">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/salary-benchmarking">Originally published at easedit.co</a>
+      </div>
+      <h1>How to Benchmark Your Salary Before Negotiating</h1>
+      <h1>How to Benchmark Your Salary Before Negotiating</h1>
+
+<p>Most salary negotiations fail before they start — not because the candidate asked for too much, but because they had no idea what to ask for.</p>
+
+<p><strong>Salary benchmarking is the process of finding a defensible market rate for a specific role, in a specific location, at a specific experience level.</strong> It takes about two hours the first time. Without it, any number you put forward is a guess — and guesses are easy to dismiss.</p>
+
+<hr>
+
+<h2>Why generic salary sites underperform</h2>
+
+<p>Glassdoor and PayScale are useful starting points, but their data has two problems.</p>
+
+<p>First, salaries are self-reported and tend to skew high — people who feel well-paid are more likely to share. Second, the data is often stale, particularly in fast-moving markets like tech where compensation shifted significantly in 2022–2024.</p>
+
+<p>Use them for orientation, not for the number you put on the table.</p>
+
+<hr>
+
+<h2>The benchmarking stack</h2>
+
+<h3>Step 1 — Role and level clarification</h3>
+
+<p>Before you look at any numbers, be precise about what you're benchmarking.</p>
+
+<ul>
+<li>Job title (exactly what appears in the offer, not a shorthand)</li>
+<li>Experience level (years in role, management scope, technical depth)</li>
+<li>Location (city, not country — London and Manchester are different markets)</li>
+<li>Industry and company size (compensation varies substantially between a FTSE 100 and a Series A)</li>
+</ul>
+
+<p>A "Senior Product Manager" at a 50-person startup in Manchester is a different benchmark than the same title at a bank in London.</p>
+
+<h3>Step 2 — Data sources</h3>
+
+<p><strong>LinkedIn Salary</strong> — good range data, requires premium but often accessible via free trial. Filter by location, industry, and experience.</p>
+
+<p><strong>Glassdoor</strong> — useful for triangulation. Look at multiple entries, not the headline number. The company-specific data is often more accurate than the role average.</p>
+
+<p><strong>Levels.fyi</strong> — reliable for software engineering, product, and data roles at named tech companies. More granular than Glassdoor, updated more frequently.</p>
+
+<p><strong>Job postings</strong> — in the UK, salary transparency in job postings is increasingly standard. Search active roles matching your target position and note the ranges. These are current-market numbers.</p>
+
+<p><strong>Recruiter conversations</strong> — if you're working with a recruiter (even informally), they have current data and a reason to share it. "What's the current market rate for this role?" is a completely normal question.</p>
+
+<h3>Step 3 — Three peer conversations</h3>
+
+<p>The most accurate salary data is anecdotal. Three conversations with people currently doing similar work — found through LinkedIn, a professional community, or your own network — will give you more useful data than any database.</p>
+
+<p>Most people will share a range if you ask directly: "I'm benchmarking [role] in [location] — what range would you expect to see?" works well. People are often more candid than candidates expect.</p>
+
+<hr>
+
+<h2>Building your number</h2>
+
+<p>After gathering data across three or four sources, you should have a range. Now narrow it.</p>
+
+<p>Your position within the range should reflect:</p>
+<ul>
+<li>Whether this is a step up (justify the top of the range)</li>
+<li>Your direct experience fit (how much runway exists before you're fully performing)</li>
+<li>The company's size and funding stage (a startup will rarely match a large company on base)</li>
+<li>Your competing offers, if any (the most powerful benchmark is another offer)</li>
+</ul>
+
+<p>Aim for a specific number, not a range. Offering a range invites the employer to anchor at the bottom.</p>
+
+<hr>
+
+<h2>Background research connects to the offer</h2>
+
+<p>Understanding market rate is part of the same preparation mindset as researching the company before an interview. The candidates who negotiate best are the ones who've done enough background work to speak with confidence rather than hoping.</p>
+
+<p>See <a href="https://easedit.co/blog/028-reviewing-job-offer-letter" rel="noopener">how to review your offer letter</a> for what to check in the document before you start any negotiation, and <a href="https://easedit.co/blog/031-salary-negotiation-script" rel="noopener">salary negotiation script</a> for the specific phrases to use once you have a number.</p>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Which salary data sources are most reliable?</h3>
+
+<p>LinkedIn Salary and Glassdoor are useful starting points but are self-reported and often skewed upward. Levels.fyi is reliable for tech roles. For the most accurate data, speak to three people currently doing similar work — their numbers are more current than any database.</p>
+
+<h3>What if the salary range in the job posting is lower than market rate?</h3>
+
+<p>That's important information — it tells you either the company is behind the market or the range is negotiable. You can still negotiate, but you need a credible number and a calm way to present it. "Based on my research, the market rate for this role in this location is [X]. Is there flexibility in the range?" is a reasonable starting point.</p>
+
+<h3>Should I share my current salary when asked?</h3>
+
+<p>In many jurisdictions this question is now restricted or banned. Where it isn't, you're not obliged to answer — you can redirect to market rate: "I'd prefer to focus on the market rate for this role. My research suggests [range] — does that align with what you're offering?" Sharing a salary that's significantly below market can cap your offer before negotiation begins.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=salary-benchmarking"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

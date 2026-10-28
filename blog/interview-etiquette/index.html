@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Etiquette: The Things Nobody Tells You — easedit Interview Guides</title>
+  <meta name="description" content="The interview starts before you walk into the room.">
+  <link rel="canonical" href="https://easedit.co/blog/interview-etiquette">
+  <meta property="og:title" content="Interview Etiquette: The Things Nobody Tells You — easedit Interview Guides">
+  <meta property="og:description" content="The interview starts before you walk into the room.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/interview-etiquette">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/interview-etiquette">Originally published at easedit.co</a>
+      </div>
+      <h1>Interview Etiquette: The Things Nobody Tells You</h1>
+      <h1>Interview Etiquette: The Things Nobody Tells You</h1>
+
+<p>The interview starts before you walk into the room.</p>
+
+<p>Receptionists mention candidates who were rude, dismissive, or on their phones. Recruiters compare notes with hiring managers. The walk from the lobby to the interview room is part of the assessment — not because the company is surveilling you, but because nervous or uncomfortable people act differently depending on who they think is watching.</p>
+
+<p>Acting consistently is easy when you aren't switching modes. The simplest etiquette rule is also the only one you really need: <strong>treat everyone in the building the way you'd treat the person deciding whether to hire you.</strong></p>
+
+<hr>
+
+<h2>Before you arrive</h2>
+
+<p><strong>Research who's interviewing you.</strong> Look them up on LinkedIn before you go. Know their name, their role, something they've worked on. If you walk in and stumble on their name when they introduce themselves, you've lost the easiest opportunity to seem prepared.</p>
+
+<p><strong>Confirm the format.</strong> The night before, check: is this one-on-one or a panel? Is it virtual or in-person? Does it involve any test or presentation? Arriving prepared for a chat and walking into a panel of four is a preventable shock. See the <a href="https://easedit.co/blog/021-interview-preparation-checklist" rel="noopener">night-before interview checklist</a> for what to confirm.</p>
+
+<p><strong>Sort your phone before you walk in.</strong> Not silent — off, or on airplane mode. Notifications during an interview are not recoverable. "Sorry, let me just—" takes 10 seconds and costs you the conversation.</p>
+
+<hr>
+
+<h2>In the room</h2>
+
+<p><strong>The handshake (or equivalent).</strong> If the interviewer offers their hand, shake it. If they don't, mirror what they do. In a video interview, acknowledging the other person directly as they join — "Good to meet you, [name]" — does the same work. Use their name once in the first minute. Don't overuse it.</p>
+
+<p><strong>Water.</strong> If they offer it, take it. It's not a trap. It gives you a beat before you answer difficult questions and gives you something to do with your hands.</p>
+
+<p><strong>Sitting position.</strong> Don't slump. Don't lean so far forward you look desperate. Sit naturally upright, arms on the table or resting comfortably — not crossed, which reads as defensive. None of this is about impressing them with your posture. It's about not distracting them from what you're saying.</p>
+
+<p><strong>When they're speaking.</strong> Look at them. Not in a fixed, uncomfortable stare — but actually at them, not at your notes, not at the wall. Nodding occasionally is fine. Interrupting is not.</p>
+
+<p><strong>Don't overshare.</strong> This is the most common etiquette mistake that candidates don't know they're making. A nervous candidate fills silences. They elaborate when they should stop. They explain why they left their last job in detail no one asked for. When you've answered the question, stop. If they want more, they'll ask.</p>
+
+<hr>
+
+<h2>In a video interview</h2>
+
+<p>The etiquette rules are the same, but the signals are different.</p>
+
+<p>Eye contact in a video interview means looking at the camera, not the screen. Most people look at the image of the person they're speaking to — which reads as looking slightly downward and away. Looking at the camera (even though it feels unnatural) reads as engaged and direct.</p>
+
+<p>Joining late to a video interview is worse than arriving late in person. You can't recover the first impression the same way. Be in the room, set up, and ready 2–3 minutes before the start time.</p>
+
+<p>If your background is busy or unprofessional, deal with it. A blurred or neutral background is fine. A messy room with clothes visible in the corner is not.</p>
+
+<hr>
+
+<h2>Background research and etiquette</h2>
+
+<p>Asking informed questions — about the team's recent work, about a challenge the company is navigating — is a form of etiquette. It signals that you took the interview seriously enough to prepare. The inverse is asking a question that takes 30 seconds on Google to answer: it signals you didn't. See the <a href="https://easedit.co/blog/026-questions-to-ask-interviewer" rel="noopener">questions to ask at the end of an interview</a> for specific examples that land well.</p>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How early should I arrive for an in-person interview?</h3>
+
+<p>Aim to arrive at the building 10–15 minutes early, but don't check in more than 5 minutes before your scheduled time. Arriving too early puts pressure on the host to deal with you before they're ready.</p>
+
+<h3>Should I bring a copy of my CV to the interview?</h3>
+
+<p>Yes — one copy per interviewer if you know how many there are, plus one spare. It's a minor signal of preparation. Don't expect them to refer to it, but having it available is better than not.</p>
+
+<h3>Is it okay to take notes during the interview?</h3>
+
+<p>Yes, briefly and selectively. Jotting a word or phrase when they describe the role signals active listening. Transcribing everything signals anxiety. Ask first if you're unsure: "Do you mind if I take a few notes?"</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=interview-etiquette"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Ask for Clarification in an Interview Without Losing Points — easedit Interview Guides</title>
+  <meta name="description" content="There's a question you don't fully understand. You have two choices.">
+  <link rel="canonical" href="https://easedit.co/blog/asking-for-clarification-interview">
+  <meta property="og:title" content="How to Ask for Clarification in an Interview Without Losing Points — easedit Interview Guides">
+  <meta property="og:description" content="There's a question you don't fully understand. You have two choices.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://easedit.co/blog/asking-for-clarification-interview">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #5DCAA5;
+      --dark: #0F172A;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg);
+           line-height: 1.7; font-size: 16px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { background: var(--dark); padding: 0 16px; }
+    .site-header-inner { max-width: 900px; margin: 0 auto; display: flex;
+                          align-items: center; justify-content: space-between;
+                          height: 56px; }
+    .logo { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -0.3px; }
+    .logo span { color: var(--brand); }
+    .header-cta { background: var(--brand); color: #fff; padding: 6px 16px;
+                   border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .header-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Layout */
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+
+    /* Article */
+    article h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700;
+                  line-height: 1.25; margin-bottom: 12px; color: var(--dark); }
+    .article-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 32px;
+                     padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .article-meta a { color: var(--brand); }
+    article h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 12px;
+                  color: var(--dark); }
+    article h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 8px; }
+    article p { margin-bottom: 18px; }
+    article ul { margin: 0 0 18px 24px; }
+    article li { margin-bottom: 6px; }
+    article hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    article blockquote { border-left: 3px solid var(--brand); padding: 8px 16px;
+                          margin: 24px 0; color: var(--muted); font-style: italic; }
+    article code { background: var(--bg-alt); padding: 2px 6px; border-radius: 4px;
+                    font-size: 0.9em; }
+    article strong { font-weight: 600; color: var(--dark); }
+
+    /* CTA box */
+    .cta-box { background: var(--bg-alt); border: 1px solid var(--border);
+                border-left: 4px solid var(--brand); border-radius: 8px;
+                padding: 24px; margin: 40px 0; }
+    .cta-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--dark); }
+    .cta-box p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: var(--brand); color: #fff;
+                padding: 10px 22px; border-radius: 6px; font-weight: 600;
+                font-size: 0.9rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Post grid */
+    .post-grid { display: grid; gap: 20px; }
+    .post-card { border: 1px solid var(--border); border-radius: 10px;
+                  padding: 20px; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .post-card .series-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+                               letter-spacing: .5px; color: var(--brand); margin-bottom: 8px; }
+    .post-card h2 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .post-card h2 a { color: inherit; }
+    .post-card h2 a:hover { color: var(--brand); text-decoration: none; }
+    .post-card .read-link { font-size: 0.85rem; color: var(--brand); font-weight: 500; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 60px 0 48px; }
+    .hero h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 700;
+                color: var(--dark); margin-bottom: 12px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 520px;
+               margin: 0 auto 28px; }
+    .hero-cta { display: inline-block; background: var(--brand); color: #fff;
+                 padding: 12px 28px; border-radius: 8px; font-weight: 600; }
+    .hero-cta:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--border); padding: 32px 16px;
+                    text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .site-footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="logo">eased<span>it</span></a>
+      <a href="https://easedit.co" class="header-cta">Try free →</a>
+    </div>
+  </header>
+  
+  <div class="page-wrap">
+    <article>
+      <div class="article-meta">
+        <span>Career Interview Guide</span> ·
+        <a href="https://easedit.co/blog/asking-for-clarification-interview">Originally published at easedit.co</a>
+      </div>
+      <h1>How to Ask for Clarification in an Interview Without Losing Points</h1>
+      <h1>How to Ask for Clarification in an Interview Without Losing Points</h1>
+
+<p>There's a question you don't fully understand. You have two choices.</p>
+
+<p>You can answer what you think you heard — and risk spending two minutes on the wrong thing. Or you can ask for clarification — and risk appearing unprepared.</p>
+
+<p>Most candidates choose the first option. They shouldn't.</p>
+
+<p><strong>Asking a well-placed clarifying question is a signal of seniority, not weakness.</strong> Experienced professionals ask clarifying questions before acting. Interviewers know this. A candidate who dives straight into a vague question without checking they understand it is demonstrating a different kind of risk — that they'll charge ahead with unclear briefs in the actual job.</p>
+
+<hr>
+
+<h2>When to ask for clarification</h2>
+
+<p>Not for every question. For ambiguous questions — where there are genuinely multiple ways to interpret what's being asked, and where the interpretation changes the answer meaningfully.</p>
+
+<p>Examples where clarification is genuinely useful:</p>
+
+<ul>
+<li>"Tell me about a challenge you've faced." (Career challenge? Personal? Technical? A specific type?)</li>
+<li>"What's your leadership style?" (In which context — a team, a project, a crisis?)</li>
+<li>"How do you handle conflict?" (With a team member? With a stakeholder? With a manager?)</li>
+</ul>
+
+<p>Examples where it reads as stalling:</p>
+
+<ul>
+<li>"Tell me about yourself." (Everyone knows what this means.)</li>
+<li>"Why do you want this role?" (You should know the answer. Asking for clarification here signals you don't.)</li>
+</ul>
+
+<hr>
+
+<h2>Phrases that work</h2>
+
+<p><strong>When you genuinely don't understand the question:</strong></p>
+<p>"Could you say a bit more about what you're looking for? I want to make sure I'm giving you a useful answer."</p>
+
+<p><strong>When the question is ambiguous:</strong></p>
+<p>"Just to make sure I'm answering the right thing — are you asking about [interpretation A] or [interpretation B]?"</p>
+
+<p><strong>When you need a moment to think:</strong></p>
+<p>"That's a good question. Let me take a second to give you a considered answer." (Then take the second. Don't fill it with noise.)</p>
+
+<p><strong>When a case question has unclear scope:</strong></p>
+<p>"Before I start — can I ask a few questions to make sure I'm framing this correctly?"</p>
+
+<hr>
+
+<h2>Buying time without asking a question</h2>
+
+<p>Sometimes you don't need clarification — you just need a beat before you answer. Candidates who feel pressured to fill every silence immediately give worse answers.</p>
+
+<p>These phrases buy you a pause without sounding like you're stalling:</p>
+
+<ul>
+<li>"Let me think about that for a moment."</li>
+<li>"I want to give you a specific example rather than a general answer — one moment."</li>
+<li>"That's something I've thought about — let me make sure I'm giving you the best example."</li>
+</ul>
+
+<p>Silence after one of these lines is fine. Three to five seconds of considered silence reads as thoughtfulness. Fifteen seconds of anxious-looking silence reads as being stuck.</p>
+
+<hr>
+
+<h2>Background research reduces the need for clarification</h2>
+
+<p>Most candidates ask for clarification because the question takes them somewhere unfamiliar — a topic they haven't prepared, a scenario they hadn't considered. Candidates who've done thorough background research — on the company, the role, and the likely question themes — need to clarify less.</p>
+
+<p>In easedit.co sessions, the AI interviewer asks follow-up questions based on your actual answers, which means you encounter the "ambiguous follow-up" scenario in practice rather than for the first time in a real interview. The experience of navigating a question you didn't quite understand — and handling it calmly — is worth more than knowing the "right phrases" in the abstract.</p>
+
+<p>See the <a href="https://easedit.co/blog/026-questions-to-ask-interviewer" rel="noopener">questions to ask the interviewer</a> for related guidance on staying in control of the conversation.</p>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Is it okay to ask for an interview question to be repeated?</h3>
+
+<p>Yes. "Sorry — could you repeat that?" is completely normal. If you didn't hear something clearly, asking is far better than answering the wrong question.</p>
+
+<h3>What if asking for clarification makes me seem unprepared?</h3>
+
+<p>The opposite is often true. Asking a clarifying question before answering a complex question is what experienced professionals do — it shows you want to give a considered answer, not just fill the silence.</p>
+
+<h3>How many times can I ask for clarification in one interview?</h3>
+
+<p>There's no hard limit, but more than two or three times on substantive questions may signal that you're stalling. Use it selectively — for ambiguous questions, not straightforward ones.</p>
+
+<hr>
+
+<p>Practise your interview with easedit.co — voice AI, from $29, no data stored.</p>
+      
+    <div class="cta-box">
+      <h3>Practice this with an AI interviewer</h3>
+      <p>easedit.co runs a full mock interview, asks follow-up questions,
+         and scores your answers — so you know exactly what to improve before the real thing.</p>
+      <a href="https://easedit.co?utm_source=netlify&utm_medium=blog&utm_content=asking-for-clarification-interview"
+         class="cta-btn">Start free at easedit.co →</a>
+    </div>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <p>Interview guides by <a href="https://easedit.co">easedit.co</a> —
+       AI-powered interview practice. &copy; easedit.co</p>
+  </footer>
+</body>
+</html>
